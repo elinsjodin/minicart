@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+    php-apache-service:
+        container_name: minicart-php
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - ./src:/var/www/html/
+        ports:
+            - 8000:80

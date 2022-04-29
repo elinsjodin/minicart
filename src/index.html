@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My webshop.com</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="products.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <strong>My webshop.com</strong>
+          </a>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                class="d-inline-block align-text-top mr-1"
+                viewBox="0 0 902.86 902.86"
+                role="img"
+              >
+                <path
+                  fill="#ffffff"
+                  d="M671.504,577.829l110.485-432.609H902.86v-68H729.174L703.128,179.2L0,178.697l74.753,399.129h596.751V577.829z
+                    			 M685.766,247.188l-67.077,262.64H131.199L81.928,246.756L685.766,247.188z"
+                />
+                <path
+                  fill="#ffffff"
+                  d="M578.418,825.641c59.961,0,108.743-48.783,108.743-108.744s-48.782-108.742-108.743-108.742H168.717
+                    			c-59.961,0-108.744,48.781-108.744,108.742s48.782,108.744,108.744,108.744c59.962,0,108.743-48.783,108.743-108.744
+                    			c0-14.4-2.821-28.152-7.927-40.742h208.069c-5.107,12.59-7.928,26.342-7.928,40.742
+                    			C469.675,776.858,518.457,825.641,578.418,825.641z M209.46,716.897c0,22.467-18.277,40.744-40.743,40.744
+                    			c-22.466,0-40.744-18.277-40.744-40.744c0-22.465,18.277-40.742,40.744-40.742C191.183,676.155,209.46,694.432,209.46,716.897z
+                    			 M619.162,716.897c0,22.467-18.277,40.744-40.743,40.744s-40.743-18.277-40.743-40.744c0-22.465,18.277-40.742,40.743-40.742
+                    			S619.162,694.432,619.162,716.897z"
+                />
+              </svg>
+              Cart
+            </button>
+
+            <div
+              class="minicart dropdown-menu dropdown-menu-right shadow"
+              aria-labelledby="dropdownMenuButton"
+            >
+              <div class="minicart-empty text-center py-5" id="minicart">
+                Nothing in cart
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div
+            class="products-container row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4"
+          >
+            <div class="product-container col mb-4 d-none">
+              <div class="card shadow-sm h-100">
+                <img class="mx-5 mx-sm-3 px-5 px-sm-0 img-fluid" />
+
+                <div class="card-body d-flex flex-column">
+                  <h6 class="card-text mb-3"></h6>
+                  <div
+                    class="d-flex mt-auto justify-content-between align-items-center"
+                  >
+                    <button type="button" class="btn btn-primary btn-sm">
+                      Buy
+                    </button>
+                    <p class="m-0"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
